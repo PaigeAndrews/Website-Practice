@@ -11,7 +11,7 @@ html {
   .zone{
       /* padding:30px 50px;
       margin: 40px 60px; */
-      cursor:pointer;
+      /* cursor:pointer; */
       /* display: inline-block; */
       color: #FFF;
       font-size: 2em;
@@ -21,16 +21,7 @@ html {
   
   }
   
-  .icon{
-    border-radius: 50%;
-     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height:297.66px;
-  /*   width: auto; */
-    
-  }
-  
+ 
   /* .zone:hover {
   box-shadow: rgba (0,0,0,0.8) 0px 5px 15px, inset
   }
@@ -93,29 +84,53 @@ html {
       grid-gap: 20px;
       grid-template-columns:repeat(auto-fill, minmax(350px, 1fr));
       padding: 30px;
-    
+     width: 100%;
+     height:auto;
+     /* object-fit:contain; */
+  }
+
+  .third_container{
+      width: 100%;
+      height:auto;
   }
   
+  .icon{
+    border-radius: 50%;
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:297.66px;
+      min-height: 50px;
+    width: auto;
+    /* object-fit:contain; */
+  }
+  
+
   .box > img {
       width: 100%;
+      /* min-width: 30%; */
+      /* object-fit:contain; */
   }
   
   .box{
       font-size: 25px;
     text-align: center;
-    
-    
+    object-fit:contain;
+    padding-right: 52px;
   }
   
   footer{
     display:fixed;
       text-align: left;
     font-size: 5px;
-    
+    padding-left: 2%;
+    width: 100%;
   }
   
   h1{
     font-size: 25px;
+    margin:0;
+    padding-top: 3%;
   }
   
   p{
@@ -137,17 +152,21 @@ html {
       background: linear-gradient(#e99e8c ,#ecb93b);
   }
   
-  /* this is the header main image */
+  
   #design {
       position: relative; 
-    width: 300px; 
-    height: 300px;
+    width: 200px; 
+    height: 200px;
       margin: auto; 
     margin-top: 12%;	
-   
+   min-height: 70px;
+   min-width: 70px;
   }
   
-  #designImageContainer
+  #designImageContainer{
+      width: 100%;
+      height:10%;
+  }
   
   /* img tag doesn't suppert before and after so we use div instead */
   /* #design {
@@ -200,4 +219,25 @@ html {
       transform: rotate(405deg);
   }
   
+  .logo{
+    color: #4591e8;
+    font-size: 60px;
+    margin: 0;
+    /* display: inline; */
+/* vertical-align: middle; 
+line-height: 90px;   */
+float: left;
+/* line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle; */
+}
+
+.logo2{
+    color: #4591e8;
+    font-size: 60px; 
+    padding-left:10%; 
+    margin:0;
+    display: inline;
+    float: right;
+}
   
